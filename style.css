@@ -140,7 +140,7 @@ header div:last-child {
 }
 
 .search-content {
-    flex; 1
+    flex: 1;
     display: flex;
     padding: 15px 8px 0 14px;
 }
