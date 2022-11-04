@@ -31,23 +31,23 @@ body {
     display: flex;
     text-decoration: none;
 }
-
-header div:last-child {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    
-}
-
-.topnav-left {
+.header div:first-child{
     display: flex;
     align-items: center;
     padding: 6px;
     height: 60px;
     flex-shrink: 0;
-   
 }
-.topnav-left-left {
+
+header div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-grow: 1;
+    
+}
+
+.topnav-left-right {
     display: inline-block;
     padding: 5px;
     margin: 0 5px;
@@ -56,29 +56,6 @@ header div:last-child {
     cursor: pointer;
 
 }
-
-.topnav-right {
-    display: inline-block;
-    align-items: center;
-    padding: 6px;
-    height: 60px;
-    flex-shrink: 0;
-    flex-grow: 1;
-    justify-content: right;
-    
-
-}
-.topnav-right-right {
-    display: inline-block;
-    padding: 5px;
-    margin: 0 3px;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-   
-
-}
-
 
 .avatar-1 {
     max-height: 3vh;
@@ -160,8 +137,13 @@ header div:last-child {
 /*********** empty container *******/
 
 .empty-container {
-    display: none;
-    padding: 200px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.empty-container div:first-child
+{
+    min-height: 40vh;
     flex-grow: 1;
 }
 
@@ -170,48 +152,30 @@ header div:last-child {
 
 .footer-nav {
     display: flex;
-    padding: 0 20px;
-    max-width: 100%;
-    justify-content: space-between;
     background-color: #171717;
-    flex-grow: 1;
 }
 
 footer div:first-child {
     display: flex;
     align-items: center;
-    justify-content: left;
+    padding: 6px;
+    height: 60px;
+    flex-shrink: 0;
+    justify-content:flex-start;
+    
 }
 
-footer div:nth-child(-n + 1) {
+footer div:nth-child(-n + 2) {
     display: flex;
     align-items: center;
     justify-content: right;
 }
 
 footer div:last-child {
-    display: flex;
+     display: flex;
     align-items: center;
     justify-content: right;
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    height: 50px;
-    flex-shrink: 0;
-
-}
-
-.nav-left-left {
-    display: inline-block;
-    padding: 5px;
-    margin: 0 5px;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .nav-middle {
@@ -221,42 +185,18 @@ footer div:last-child {
     flex-shrink: 0;
 
 }
-
-.nav-middle-bottom {
-    display: block;
-    height: 14px;
-    margin-right: 6px;
-    padding: 15px;
-    white-space: nowrap;
-    flex-grow: 1;
-    color: #999da2;
-}
-
 .arbor {
     height: 14px;
     margin: 5px;
 }
 
-
-.nav-right {
-    display: inline-block;
-    align-items: center;
-    padding: 6px;
-    height: 60px;
-    flex-shrink: 0;
-    flex-grow: 1;
-    justify-content: right;
-}
-
-.nav-right-right {
+.nav-left-right {
     display: inline-block;
     padding: 5px;
-    margin: 0 3px;
+    margin: 0 5px;
     color: white;
     text-decoration: none;
     cursor: pointer;
-    flex-shrink: 3;
-   
-
+    flex-shrink: 1;
 }
 
