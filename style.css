@@ -15,7 +15,6 @@ body {
     flex-direction: column;
     width: 90%; 
     height: 100%;
-    margin: auto;
     font-size: 15px;
     font-family: sans-serif;
     justify-content: space-between;
@@ -126,6 +125,7 @@ header div:last-child {
     padding-top: 6px;
     width: auto;
     position: relative;
+    
 }
 
 .search .search-box {
@@ -142,10 +142,12 @@ header div:last-child {
 .search-content {
     flex; 1
     display: flex;
-    padding: 5px 8px 0 14px;
+    padding: 15px 8px 0 14px;
 }
 
-
+.search-magnifying-glass {
+    margin: auto;
+}
 
 
 
