@@ -1,0 +1,260 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #202124;
+    color: #bdc1c6;
+    box-sizing:content-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%; 
+    height: 100%;
+    margin: auto;
+    font-size: 15px;
+    font-family: sans-serif;
+    justify-content: space-between;
+    background-color: #202124;
+   
+    
+}
+
+
+/*********** Header *******/
+/*********** Header *******/
+
+.header-nav {
+    display: flex;
+    text-decoration: none;
+}
+
+header div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+}
+
+.topnav-left {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+    flex-shrink: 0;
+   
+}
+.topnav-left-left {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.topnav-right {
+    display: inline-block;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    justify-content: right;
+    
+
+}
+.topnav-right-right {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 3px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+   
+
+}
+
+
+.avatar-1 {
+    max-height: 3vh;
+    border-radius: 45%;
+}
+
+
+/*********** Main *******/
+/*********** Main *******/
+
+.main {
+    padding-top: 92px;
+    max-height: 100%;
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    
+}
+
+.google {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+    
+}
+.google {
+    height: 92px;
+    width: 272px;
+    
+}
+
+/*********** search bar *******/
+/*********** search bar *******/
+.search-bar{
+    padding: 20px;
+}
+.search {
+    margin: 0 auto;
+    padding-top: 6px;
+    width: auto;
+    position: relative;
+}
+
+.search .search-box {
+    display: flex;
+    height: 50px;
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+    width: auto;
+    max-width: 584px;
+    z-index: 3;
+
+}
+
+.search-content {
+    flex; 1
+    display: flex;
+    padding: 5px 8px 0 14px;
+}
+
+
+
+
+
+
+
+
+
+
+/*********** empty container *******/
+/*********** empty container *******/
+
+.empty-container {
+    display: none;
+    padding: 200px;
+    flex-grow: 1;
+}
+
+/*********** footer-nav *******/
+/*********** footer-nav *******/
+
+.footer-nav {
+    display: flex;
+    padding: 0 20px;
+    max-width: 100%;
+    justify-content: space-between;
+    background-color: #171717;
+    flex-grow: 1;
+}
+
+footer div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+footer div:nth-child(-n + 1) {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+footer div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    height: 50px;
+    flex-shrink: 0;
+
+}
+
+.nav-left-left {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    flex-shrink: 1;
+}
+
+.nav-middle {
+    display: block;
+    align-items: center;
+    padding: 15px;
+    flex-shrink: 0;
+
+}
+
+.nav-middle-bottom {
+    display: block;
+    height: 14px;
+    margin-right: 6px;
+    padding: 15px;
+    white-space: nowrap;
+    flex-grow: 1;
+    color: #999da2;
+}
+
+.arbor {
+    height: 14px;
+    margin: 5px;
+}
+
+
+.nav-right {
+    display: inline-block;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    justify-content: right;
+}
+
+.nav-right-right {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 3px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    flex-shrink: 3;
+   
+
+}
+
