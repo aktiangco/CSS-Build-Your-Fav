@@ -9,7 +9,6 @@ body {
     color: #bdc1c6;
     box-sizing:content-box;
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -20,11 +19,8 @@ body {
    
     
 }
-
-
 /*********** Header *******/
 /*********** Header *******/
-
 .header-nav {
     display: flex;
     text-decoration: none;
@@ -36,7 +32,6 @@ body {
     height: 60px;
     flex-shrink: 0;
 }
-
 header div:last-child {
     display: flex;
     align-items: center;
@@ -44,7 +39,6 @@ header div:last-child {
     flex-grow: 1;
     
 }
-
 .topnav-left-right {
     display: inline-block;
     padding: 5px;
@@ -54,17 +48,13 @@ header div:last-child {
     cursor: pointer;
 
 }
-
 .avatar-1 {
     max-height: 3vh;
     border-radius: 45%;
 }
-
-
 /*********** Main *******/
 /*********** Main *******/
-
-.main {
+main {
     padding-top: 92px;
     max-height: 100%;
     position: relative;
@@ -75,18 +65,15 @@ header div:last-child {
     flex-shrink: 0;
     
 }
-
 .google {
     height: 92px;
     width: 272px;
     
 }
-
 /*********** search bar *******/
 /*********** search bar *******/
 .search-bar{
     padding: 20px;
-   
     position: relative;
     display: flex;
     flex-direction: row;
@@ -94,7 +81,8 @@ header div:last-child {
     justify-content: center;
 }
 
-.search .search-box {
+
+.search-bar .search-box {
     display: row;
     height: 50px;
     padding: 15px 8px 0 14px;
@@ -105,23 +93,37 @@ header div:last-child {
     z-index: 3;
 
 }
-
 .search-content {
     display: flex;
     text-decoration: 0;
     width: 300px;
 }
 
-.search-content div:first-child {
-    justify-content: left;
-    
-}
 .search-content div:nth-child(2) {
     flex-grow: 3;
 }
+.searh-here {
+    float: none;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  box-shadow: inherit;
 
-.search-content div:last-child {
-    justify-content: right;
+}
+input {
+    background-color: #202124;
+    color: white;
+    text-decoration: none;
+    box-shadow: inherit;
+}
+
+.search-buttons {
+    display: flex;
+    flex-grow: 1;
+    padding: 5px;
+    justify-content: center;
     
 }
 
@@ -132,45 +134,34 @@ header div:last-child {
 
 
 
-/*********** empty container *******/
-/*********** empty container *******/
-
-.empty-container {
-    display: flex;
+/*********** aside *******/
+/*********** aside *******/
+aside {
+        min-height: 40vh; 
+        flex-grow: 5;
+        
 }
-
-.empty-container div:first-child
-{
-    height: auto;
-    flex-grow: 1;
-}
-
-/*********** footer-nav *******/
-/*********** footer-nav *******/
-
-.footer-nav {
+/*********** footer *******/
+/*********** footer *******/
+footer {
     display: flex;
     padding: 10px;
     background-color: #171717;
     align-items: center;
     width: 100%;
 }
-
-.footer-nav div:nth-child(2) {
+footer div:nth-child(2) {
     display: row;
     align-items: center;
     flex-grow: 1;
 }
-
 .arbor {
     height: 14px;
     margin: 5px;
 }
-
 .nav-right {
     padding-left: 120px;
 }
-
 .nav-left-right {
     display: inline-block;
     padding: 5px;
