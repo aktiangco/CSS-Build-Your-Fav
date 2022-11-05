@@ -17,6 +17,8 @@ body {
 .header-nav {
     display: flex;
     text-decoration: none;
+    padding: 2vh;
+  
 }
 .header div:first-child{
     display: flex;
@@ -36,7 +38,7 @@ header div:last-child {
     display: inline-block;
     padding: 5px;
     margin: 0 5px;
-    color: white;
+    color: #bdc1c6;
     text-decoration: none;
     cursor: pointer;
 
@@ -92,24 +94,27 @@ main {
     width: 300px;
 }
 
+i {
+    padding: 5px;
+
+}
+
 .search-content div:nth-child(2) {
     flex-grow: 3;
 }
-.searh-here {
-    float: none;
-  display: block;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  box-shadow: inherit;
 
-}
 input {
-    background-color: #202124;
-    color: white;
-    text-decoration: none;
-    box-shadow: inherit;
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color:#bdc1c6;
+    word-wrap: none;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    min-width: 18vw;
 }
 
 .search-buttons {
@@ -117,8 +122,39 @@ input {
     flex-grow: 1;
     padding: 5px;
     justify-content: center;
-    
 }
+a {color: inherit;    
+}
+#DivForHoverItem {
+    /*just so we can see it*/
+    background-color: inherit;
+    display: flex;
+}
+#hidden-text {
+    visibility: hidden;
+}
+#DivForHoverItem:hover #hidden-text{
+    visibility: visible;
+}
+
+button {
+    display: block;
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+    
 
 
 
@@ -158,7 +194,7 @@ footer div:nth-child(2) {
     display: inline-block;
     padding: 5px;
     margin: 0 5px;
-    color: white;
+    color: #bdc1c6;
     text-decoration: none;
     cursor: pointer;
     flex-shrink: 1;
