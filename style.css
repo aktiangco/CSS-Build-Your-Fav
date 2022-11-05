@@ -1,5 +1,4 @@
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -8,16 +7,10 @@ body {
     background-color: #202124;
     color: #bdc1c6;
     box-sizing:content-box;
-}
-.container {
     display: flex;
     flex-direction: column;
     width: 100%; 
-    height: 100%;
-    background-color: #202124;
-    flex-shrink: 0;
-   
-    
+    height: 100vh; 
 }
 /*********** Header *******/
 /*********** Header *******/
@@ -136,9 +129,8 @@ input {
 
 /*********** aside *******/
 /*********** aside *******/
-aside {
-        min-height: 40vh; 
-        flex-grow: 5;
+aside { 
+        flex-grow: 1;
         
 }
 /*********** footer *******/
