@@ -114,7 +114,7 @@ input {
     outline: none;
     display: flex;
     flex: 100%;
-    min-width: 18vw;
+    min-width: 11vw;
 }
 
 .search-buttons {
